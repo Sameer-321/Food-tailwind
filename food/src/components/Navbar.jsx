@@ -48,7 +48,10 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {/* overlay */}
       {nav ? (
-        <div className="bg-black/80 fixed w-full h-screen z-10 top-0 left-0"></div>
+        <div
+          onClick={() => setNav(!nav)}
+          className="bg-black/80 fixed w-full h-screen z-10 top-0 left-0"
+        ></div>
       ) : (
         ""
       )}
